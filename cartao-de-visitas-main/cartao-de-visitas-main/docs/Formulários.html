@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulários</title>
+</head>
+<body>
+
+
+<h1>Formulários</h1>
+<p>Aula sobre formulários  em HTML</p>
+
+<form id="form">
+  <label for="nome">Nome</label>
+  <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+  <br>
+  <br>
+  <label for="apelido">Apelido</label>
+  <input type="text" id="apelido" name="apelido" placeholder="Digite seu Apelido" required>
+  <br>
+  <br>
+  <label for="senha">Senha</label>
+  <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+  <br>
+  <br>
+  <input id=enviar type="submit" value="Enviar">
+  <br>
+  <br>
+  <p>Qual sua cor favorita?</p>
+  <label for="vermelho">Vermelho</label>
+  <input type="radio" id="vermelho" name="fav_cor" value="vermelho" >
+  <br>
+  <label for="amarelo">Amarelo</label>
+  <input type="radio" id="amarelo" name="fav_cor" value="amarelo" >
+  <br>
+  <label for="azul">Azul</label>
+  <input type="radio" id="azul" name="fav_cor" value="azul" >
+</form>
+
+
+</body>
+
+<script type="application/javascript">
+    function dizer_ola(event){
+      event.preventDefault();
+      alert('Olá ' + document.getElementById('nome').value + 'A senha é '+ document.getElementById('senha').value+'Cor favorita ' );
+
+    }
+    document.getElementById('form').addEventListener('submit', dizer_ola);
+</script>
+
+
+
+
+</html>

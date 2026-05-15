@@ -1,0 +1,8 @@
+thead{
+    background-color: darkblue;
+    color: white;
+}
+/* para cada linha que for par ele aplica essas propriedades*/
+tr:nth-child(even){
+    background-color: lightblue;
+}

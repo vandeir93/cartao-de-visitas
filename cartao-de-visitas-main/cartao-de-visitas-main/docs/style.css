@@ -1,0 +1,22 @@
+p{
+    color: red;
+}
+
+h1{
+    color: blue;
+}
+/*seletor de id */
+#paragrafo-2{
+    color: purple;
+}
+/* seletor de classe*/
+.linha-cinza{
+    background-color: lightgray;
+}
+
+/*  seletor de pseudoclasse*/
+a:hover{
+    background-color: darkblue;
+    color: white;
+}
+
